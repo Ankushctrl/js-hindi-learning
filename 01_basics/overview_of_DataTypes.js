@@ -61,12 +61,51 @@ let myObj={
     age : 23 , 
     city: "kathua",
 }
- console.log(myObj);
- console.log(heros);
+//  console.log(myObj);
+//  console.log(heros);
  
  const MyFuntion = function () {
     console.log("Hello World!");
     
     
  }
- MyFuntion();
+//  MyFuntion();
+
+
+
+
+
+
+
+//  ******************heap and stack*************************
+
+
+let MyYouTubeName = "Hecker143dotcom";
+
+let AnotherName = MyYouTubeName;
+
+
+AnotherName = "Redhatdotcom"
+console.log(AnotherName); // op Redhatdotcom
+console.log(MyYouTubeName); // op Hecker143dotcom
+
+
+let userOne = {
+    Email : "devanhski@gmail.com",
+    upi : "devanhski@icicic",
+}
+let usertwo = userOne
+
+
+console.log(userOne);
+
+usertwo.Email = "Sharmadev@gmail.com"
+console.log(usertwo);
+
+
+console.log(userOne.Email);
+console.log(usertwo.Email);
+
+/*Primitive → Stack → Copy
+Non-Primitive → Heap → Reference
+*/
